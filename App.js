@@ -5,9 +5,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Hey, user</Text>
-      <Greetings name="Victor Rivas" />
-      <Greetings name="Maria Sánchez" />
-      <Greetings name="Patricia Flores" />
+      <Greetings firstName="Maria" secondName="Sánchez" />
+      <Greetings/>
     </View>
   );
 }
