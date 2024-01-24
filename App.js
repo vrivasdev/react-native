@@ -1,14 +1,14 @@
 import "react-native-gesture-handler";
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
 
-import Greetings from './src/components/Greetings';
 import NavigationStack from "./src/navigation/NavigationStack";
+import NavigationTab from "./src/navigation/NavigationTab";
 
 export default function App() {
   return (
     <NavigationContainer>
-      <NavigationStack />
+      <NavigationTab />
     </NavigationContainer>
   );
 }

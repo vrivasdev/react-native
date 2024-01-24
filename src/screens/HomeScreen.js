@@ -1,5 +1,6 @@
-import { View, Text, Button } from 'react-native'
 import React from 'react'
+import { Text, Button } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function HomeScreen(props) {
   const { navigation } = props;
@@ -8,9 +9,9 @@ export default function HomeScreen(props) {
     navigation.navigate(name);
   }
   return (
-    <View>
+    <SafeAreaView>
       <Text>Home Screen</Text>
       <Button onPress={() => goToPage('Settings')} title="Go to Settings"/>
-    </View>
+    </SafeAreaView>
   )
 }
